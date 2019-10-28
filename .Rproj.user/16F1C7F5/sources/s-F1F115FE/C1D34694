@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570277490022.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C1D34694",
+    "lastKnownWriteTime" : 1572302648,
+    "last_content_update" : 1572302648111,
+    "path" : "~/Documents/github/mapquestr/R/geocode.R",
+    "project_path" : "R/geocode.R",
+    "properties" : {
+        "cursorPosition" : "132,34",
+        "scrollLine" : "123",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,10 @@
+Package: mapquestr
+Type: Package
+Title: MapQuest in R
+Version: 0.1.0
+Authors@R: c(person("Eric", "Chiou", email = "eychiou@gmail.com", role = c("cre")))
+Description: Interfaces with MapQuest API using `httr`
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570278638842.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3D1605E6",
+    "lastKnownWriteTime" : 4495407072,
+    "last_content_update" : 1570278638842,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "25c9d6edb47a40c5978aebce8489b952",
+        "name" : "response_data",
+        "title" : "response_data"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
