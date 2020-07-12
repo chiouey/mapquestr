@@ -7,4 +7,4 @@ Description: Interfaces with MapQuest API using `httr`
 License: CC0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 7.1.0

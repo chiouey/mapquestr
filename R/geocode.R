@@ -118,7 +118,7 @@ geocode_mapquest_reverse <- function(latlon,
 
    url_anchor <- "http://www.mapquestapi.com/geocoding/v1/reverse?"
 
-   for (i in 1:dim(latlngs)[1]) {
+   for (i in 1:dim(latlon)[1]) {
 
       query <- paste0(url_anchor, "key=", key,
                       "&outFormat=json&thumbMaps=FALSE&location=",
@@ -199,12 +199,18 @@ geocode_mapquest <- function(addresses,
          stop(paste0("Error ", response$status_code,
                      ". See Mapquest API status code documentation for more information."))
 
-      response_data <- httr::content(response)
+      # get as text string
+      response_data <- httr::content(response, as = "text")
+
+      parsed_response <- jsonlite::fromJSON(response_data)
+
+      options(digits = 8)
 
       output <- output %>%
-         dplyr::bind_rows(tibble::tibble(address = addresses[i],
-                                         lat = response_data$results[[1]]$locations[[1]]$displayLatLng$lat,
-                                         lon = response_data$results[[1]]$locations[[1]]$displayLatLng$lng))
+         dplyr::bind_rows(tibble::tibble(
+            address = addresses[i],
+            lat = parsed_response$results$locations[[1]]$displayLatLng$lat,
+            lon = parsed_response$results$locations[[1]]$displayLatLng$lng))
    }
 
    return(output)

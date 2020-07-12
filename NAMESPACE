@@ -3,4 +3,5 @@
 export(distances_mapquest)
 export(geocode_mapquest)
 export(geocode_mapquest_batch)
+export(geocode_mapquest_reverse)
 importFrom(magrittr,"%>%")
